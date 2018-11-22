@@ -1,0 +1,12 @@
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.csprojAssemblyReference.cache
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\bin\Debug\netstandard2.0\FireProof.deps.json
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\bin\Debug\netstandard2.0\FireProof.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\bin\Debug\netstandard2.0\FireProof.pdb
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.csproj.CoreCompileInputs.cache
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.AssemblyInfoInputs.cache
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.AssemblyInfo.cs
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.pdb
