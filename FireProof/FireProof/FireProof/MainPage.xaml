@@ -31,17 +31,20 @@
                     Grid.Column="1"
                     Grid.ColumnSpan="2"
                     HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="viewClicked"/>
             <Button Text="Fire Info"
                     Grid.Row="3"
                     Grid.Column="1"
                     HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="infoClicked"/>
             <Button Text="FAQ"
                     Grid.Row="3"
                     Grid.Column="2"
                     HorizontalOptions="CenterAndExpand"
-                    VerticalOptions="CenterAndExpand"/>
+                    VerticalOptions="CenterAndExpand"
+                    Clicked="faqClicked"/>
 
         </Grid>
     </StackLayout>

@@ -13,5 +13,20 @@ namespace FireProof
         {
             InitializeComponent();
         }
+        
+        async void viewClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new viewAndManagePage());
+        }
+
+        async void infoClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new infoPage());
+        }
+
+        async void faqClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new faqPage());
+        }
     }
 }
