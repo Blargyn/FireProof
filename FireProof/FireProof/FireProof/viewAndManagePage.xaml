@@ -4,9 +4,29 @@
              x:Class="FireProof.viewAndManagePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+            <Label Text="Inventory Page"
+                VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            
+            <Label Text="Rooms"
+                   VerticalOptions="StartAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+            
+            <Entry
+                x:Name="roomEntry"
+                Placeholder="Room Name"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand"/>
+            
+            <Button Text="Add Room"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Clicked="Handle_AddRoom" />
+            
+            <Button Text="Fetch Rooms"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="Handle_GetRooms"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "c76d3d6da125718e0032fd837a018c8fe160977d"
+    "signature": "765b3f7354295618bffed8b9aceba72e32c91c1d"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,17 +9,101 @@
     ".NETStandard,Version=v2.0/": {
       "FireProof/1.0.0": {
         "dependencies": {
+          "Microsoft.AppCenter.Analytics": "1.11.0",
+          "Microsoft.AppCenter.Crashes": "1.11.0",
           "NETStandard.Library": "2.0.3",
-          "Xamarin.Forms": "3.3.0.912540"
+          "Rg.Plugins.Popup": "1.1.5.180",
+          "Xamarin.Forms": "3.3.0.912540",
+          "sqlite-net-pcl": "1.5.231"
         },
         "runtime": {
           "FireProof.dll": {}
+        }
+      },
+      "Microsoft.AppCenter/1.11.0": {
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "1.11.0.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Analytics/1.11.0": {
+        "dependencies": {
+          "Microsoft.AppCenter": "1.11.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Analytics.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "1.11.0.0"
+          }
+        }
+      },
+      "Microsoft.AppCenter.Crashes/1.11.0": {
+        "dependencies": {
+          "Microsoft.AppCenter": "1.11.0"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Microsoft.AppCenter.Crashes.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "1.11.0.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0"
+        }
+      },
+      "Rg.Plugins.Popup/1.1.5.180": {
+        "dependencies": {
+          "Xamarin.Forms": "3.3.0.912540"
+        },
+        "runtime": {
+          "lib/netstandard1.0/Rg.Plugins.Popup.dll": {
+            "assemblyVersion": "1.1.5.180",
+            "fileVersion": "1.1.5.180"
+          }
+        }
+      },
+      "sqlite-net-pcl/1.5.231": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.bundle_green": "1.1.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLite-net.dll": {
+            "assemblyVersion": "1.5.231.0",
+            "fileVersion": "1.5.231.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.bundle_green/1.1.11": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3",
+          "SQLitePCLRaw.core": "1.1.11"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_green.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          },
+          "lib/netstandard1.1/SQLitePCLRaw.batteries_v2.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "SQLitePCLRaw.core/1.1.11": {
+        "dependencies": {
+          "NETStandard.Library": "2.0.3"
+        },
+        "runtime": {
+          "lib/netstandard1.1/SQLitePCLRaw.core.dll": {
+            "assemblyVersion": "1.1.11.121",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Xamarin.Forms/3.3.0.912540": {
@@ -46,6 +130,27 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Microsoft.AppCenter/1.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Kh+maAyQvGfaN/Y3HkB0BE9MqnVzfq3W0Yu7MX2vaje0CwVtLTVHTeZ4KGFMUheyLdC6mHeH6/NxszamfzjBJQ==",
+      "path": "microsoft.appcenter/1.11.0",
+      "hashPath": "microsoft.appcenter.1.11.0.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Analytics/1.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kwVpbRmaqlat5K4XQzQuGQAMgqjd6wyBTVLsTcBEXSufrqtbFcDhI0Sj0xreSXPFWFYvttTaKUDTQYc53VdC4A==",
+      "path": "microsoft.appcenter.analytics/1.11.0",
+      "hashPath": "microsoft.appcenter.analytics.1.11.0.nupkg.sha512"
+    },
+    "Microsoft.AppCenter.Crashes/1.11.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CB2sLdRIvGOHKjCXGJRTY65sj6q5Q/x1FWUMGDDEEuOVGZOmN51ni6fZr67zdsDrtlkF7fwFvlU5wOaYHB/Hsw==",
+      "path": "microsoft.appcenter.crashes/1.11.0",
+      "hashPath": "microsoft.appcenter.crashes.1.11.0.nupkg.sha512"
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",
       "serviceable": true,
@@ -59,6 +164,34 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "Rg.Plugins.Popup/1.1.5.180": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/UROZ5HlAgDwRzkrERUu9i4bnfZ3wisgK0H8yWcXprXH6DcfZUkIhr6JJh9DpVqDJ7Z54JIOjk52zNJPCn+zdg==",
+      "path": "rg.plugins.popup/1.1.5.180",
+      "hashPath": "rg.plugins.popup.1.1.5.180.nupkg.sha512"
+    },
+    "sqlite-net-pcl/1.5.231": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Sy+K+Wm2RZ+4b1uLHsaXvfR92Or71XxPXa2Id6msSOVkZKh+c+PUk/HQOAgxyhm3lhvysL0mK6Gd6mI69NJ9AA==",
+      "path": "sqlite-net-pcl/1.5.231",
+      "hashPath": "sqlite-net-pcl.1.5.231.nupkg.sha512"
+    },
+    "SQLitePCLRaw.bundle_green/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HOD1/Jg9VZtrOyPUCD9reQOXHq4r+fNe24qw5nghuiUcKch+9jePeRpt6MqGGUFhg2KW89KvE/RFlhpbfF8pKA==",
+      "path": "sqlitepclraw.bundle_green/1.1.11",
+      "hashPath": "sqlitepclraw.bundle_green.1.1.11.nupkg.sha512"
+    },
+    "SQLitePCLRaw.core/1.1.11": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bWiOso10I1vDuc5rbzT69LQT0+oXfYnoqx8vKJ8zim/CJ4ytSd20QNTE/FE0dvWEgXGnvDp7gGJFu6PeWnhx9g==",
+      "path": "sqlitepclraw.core/1.1.11",
+      "hashPath": "sqlitepclraw.core.1.1.11.nupkg.sha512"
     },
     "Xamarin.Forms/3.3.0.912540": {
       "type": "package",

@@ -1,6 +1,11 @@
 ﻿using System;
+using System.IO;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+using SQLite;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace FireProof
@@ -11,7 +16,20 @@ namespace FireProof
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
+        }
+
+        static ItemDatabase database;
+        public static ItemDatabase Database
+        {
+            get
+            {
+                if(database == null)
+                {
+                    database = new ItemDatabase(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "ItemSQLite.db3"));
+                }
+                return database;
+            }
         }
 
         protected override void OnStart()
