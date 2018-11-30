@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -28,6 +29,11 @@ namespace FireProof
         async void Handle_GetRooms(object sender, EventArgs e)
         {
             var allRooms = await App.Database.GetAllRooms();
+
+            var roomList = new ObservableCollection<RoomModel>();
+            allRooms.ForEach(x => roomList.Add(x));
+
+            RoomListView.ItemsSource = roomList;
         }
 
 

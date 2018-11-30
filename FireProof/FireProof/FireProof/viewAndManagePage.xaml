@@ -11,6 +11,26 @@
             <Label Text="Rooms"
                    VerticalOptions="StartAndExpand" 
                    HorizontalOptions="CenterAndExpand" />
+
+            <ListView
+                x:Name="RoomListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                
+                            </ViewCell.ContextActions>
+                            <ViewCell.View>
+                                <StackLayout
+                                    Orientation="Horizontal">
+                                    <Label
+                                        Text="{Binding roomName}" />
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
             
             <Entry
                 x:Name="roomEntry"
