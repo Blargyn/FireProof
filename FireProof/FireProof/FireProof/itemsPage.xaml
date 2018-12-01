@@ -2,11 +2,43 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireProof.itemsPage">
+    
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding roomName}"
+                <StackLayout>
+                    <Label Text="{Binding roomName}"
+                   BindingContext="RoomModel"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+
+                    <ListView
+                x:Name="ItemListView">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.ContextActions>
+
+                                    </ViewCell.ContextActions>
+                                    <ViewCell.View>
+                                        <StackLayout
+                                    Orientation="Horizontal">
+                                            <Label
+                                        Text="{Binding itemName}" />
+                                        </StackLayout>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <Button Text="Add Item"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Clicked="Handle_AddIPopup" />
+
+                    <Button Text="Fetch Rooms"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="Handle_GetItems"/>
+
+                </StackLayout>
+            </ContentPage.Content>
 </ContentPage>

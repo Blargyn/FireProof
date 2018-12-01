@@ -874,23 +874,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Owner\\.nuget\\packages\\": {},
+    "C:\\Users\\Hann\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\FireProof.csproj",
+      "projectUniqueName": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\FireProof.csproj",
       "projectName": "FireProof",
-      "projectPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\FireProof.csproj",
-      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\obj\\",
+      "projectPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\FireProof.csproj",
+      "packagesPath": "C:\\Users\\Hann\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

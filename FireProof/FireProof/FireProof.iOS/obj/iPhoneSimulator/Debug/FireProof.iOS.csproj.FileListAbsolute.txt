@@ -71,3 +71,8 @@ C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimu
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimulator\Debug\FireProof.iOS.exe
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimulator\Debug\FireProof.iOS.pdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\FireProof.dll.mdb
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.pdb
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\FireProof.dll.config

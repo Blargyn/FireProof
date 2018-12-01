@@ -1732,20 +1732,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Owner\\.nuget\\packages\\": {}
+    "C:\\Users\\Hann\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
       "projectName": "FireProof.iOS",
-      "projectPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
-      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
+      "packagesPath": "C:\\Users\\Hann\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Hann\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1758,8 +1758,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\FireProof.csproj": {
-              "projectPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\FireProof.csproj"
+            "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\FireProof.csproj": {
+              "projectPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\FireProof.csproj"
             }
           }
         }

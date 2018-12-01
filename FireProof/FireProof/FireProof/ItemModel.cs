@@ -23,7 +23,12 @@ namespace FireProof
             get;
             set;
         }
-        public int value //the value of the item
+        public string value //the value of the item
+        {
+            get;
+            set;
+        }
+        public string quantity
         {
             get;
             set;

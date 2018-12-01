@@ -25,6 +25,9 @@
                                     Orientation="Horizontal">
                                     <Label
                                         Text="{Binding roomName}" />
+                                    <Button 
+                                        Text="View Items"
+                                        Clicked="Handle_ItemPage"/>
                                 </StackLayout>
                             </ViewCell.View>
                         </ViewCell>
@@ -35,7 +38,7 @@
             <Button Text="Add Room"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="StartAndExpand"
-                    Clicked="Handle_AddPopup" />
+                    Clicked="Handle_AddRPopup" />
             
             <Button Text="Fetch Rooms"
                     VerticalOptions="EndAndExpand"
