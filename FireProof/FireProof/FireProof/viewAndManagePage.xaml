@@ -18,7 +18,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                
+
                             </ViewCell.ContextActions>
                             <ViewCell.View>
                                 <StackLayout
@@ -31,17 +31,11 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            
-            <Entry
-                x:Name="roomEntry"
-                Placeholder="Room Name"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand"/>
-            
+
             <Button Text="Add Room"
                     VerticalOptions="EndAndExpand"
                     HorizontalOptions="StartAndExpand"
-                    Clicked="Handle_AddRoom" />
+                    Clicked="Handle_AddPopup" />
             
             <Button Text="Fetch Rooms"
                     VerticalOptions="EndAndExpand"

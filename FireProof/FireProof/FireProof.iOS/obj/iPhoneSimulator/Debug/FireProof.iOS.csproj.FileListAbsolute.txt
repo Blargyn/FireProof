@@ -70,3 +70,4 @@ C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimu
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimulator\Debug\FireProof.iOS.csproj.CopyComplete
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimulator\Debug\FireProof.iOS.exe
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\obj\iPhoneSimulator\Debug\FireProof.iOS.pdb
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\FireProof.dll.mdb
