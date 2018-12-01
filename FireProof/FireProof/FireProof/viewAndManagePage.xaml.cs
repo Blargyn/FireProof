@@ -26,7 +26,7 @@ namespace FireProof
             {
                 roomName = sender,
             };
-            await App.Database.SaveRoomAsync(room);
+            await App.Database.SaveRoomAsync(room); //should check for duplicates before saving
 
             //try to update immediately upon adding a room
             var allRooms = await App.Database.GetAllRooms();
@@ -37,7 +37,7 @@ namespace FireProof
             RoomListView.ItemsSource = roomList;
         }
 
-        private void Handle_AddPopup(object sender, EventArgs e)
+        private void Handle_AddRPopup(object sender, EventArgs e)
         {
             PopupNavigation.Instance.PushAsync(new roomPopup());
         }
@@ -50,6 +50,11 @@ namespace FireProof
             allRooms.ForEach(x => roomList.Add(x));
 
             RoomListView.ItemsSource = roomList;
+        }
+
+        async void Handle_ItemPage(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new itemsPage());
         }
 
 
