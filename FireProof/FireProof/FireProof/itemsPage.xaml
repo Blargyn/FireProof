@@ -5,39 +5,8 @@
     <ContentPage.Content>
         <StackLayout>
             <Label Text="{Binding roomName}"
-                   BindingContext="RoomModel"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-
-            <ListView
-                x:Name="ItemListView">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <ViewCell.ContextActions>
-
-                            </ViewCell.ContextActions>
-                            <ViewCell.View>
-                                <StackLayout
-                                    Orientation="Horizontal">
-                                    <Label
-                                        Text="{Binding itemName}" />
-                                </StackLayout>
-                            </ViewCell.View>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
-            <Button Text="Add Item"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="StartAndExpand"
-                    Clicked="Handle_AddIPopup" />
-
-            <Button Text="Fetch Rooms"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="EndAndExpand"
-                    Clicked="Handle_GetItems"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

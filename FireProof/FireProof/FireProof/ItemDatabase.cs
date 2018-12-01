@@ -31,7 +31,14 @@ namespace FireProof
 
         public Task<int> SaveRoomAsync(RoomModel room)
         {
-            return database.InsertAsync(room);
+            //if (room.roomName != "NULL")
+            //{
+            //    return database.UpdateAsync(room);
+            //}
+            //else
+            //{
+                return database.InsertAsync(room);
+            //}
         }
 
         public Task<List<ItemModel>> GetAllItems()

@@ -15,4 +15,3 @@ C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstand
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\FireProof.csprojAssemblyReference.cache
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\itemsPage.xaml.g.cs
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\roomPopup.xaml.g.cs
-C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\obj\Debug\netstandard2.0\itemPopup.xaml.g.cs

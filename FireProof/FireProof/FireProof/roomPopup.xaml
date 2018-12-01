@@ -24,11 +24,10 @@
                  HorizontalOptions="Center"
                  VerticalOptions="Center">
         <StackLayout>
-            <Label Text="Add Room"
-                   FontSize="40"/>
+            <Label Text="Add Room" />
             <Entry
                  x:Name="roomEntry"
-                 FontSize="25"
+                 FontSize="30"
                  Placeholder="Living Room" />
             <Button BackgroundColor="DodgerBlue"
                 FontSize="30"

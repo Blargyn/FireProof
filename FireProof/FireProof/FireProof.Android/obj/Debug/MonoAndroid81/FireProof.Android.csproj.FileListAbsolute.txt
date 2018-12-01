@@ -105,7 +105,9 @@ C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\android\assets\System.Xml.pdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof\bin\Debug\netstandard2.0\FireProof.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\linksrc\FireProof.Android.pdb
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\bin\Debug\FireProof.dll.mdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\linksrc\FireProof.dll.mdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\linksrc\FormsViewGroup.dll.mdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.Android\obj\Debug\MonoAndroid81\linksrc\Rg.Plugins.Popup.Droid.dll.mdb
