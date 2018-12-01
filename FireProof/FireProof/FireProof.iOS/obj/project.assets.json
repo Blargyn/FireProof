@@ -55,6 +55,48 @@
           }
         }
       },
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.1.5.180": {
         "type": "package",
         "dependencies": {
@@ -246,6 +288,10 @@
         "dependencies": {
           "Microsoft.AppCenter.Analytics": "1.11.0",
           "Microsoft.AppCenter.Crashes": "1.11.0",
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "12.0.1",
           "Rg.Plugins.Popup": "1.1.5.180",
           "Xamarin.Forms": "3.3.0.912540",
           "sqlite-net-pcl": "1.5.231"
@@ -298,6 +344,48 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
         }
       },
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.1.5.180": {
         "type": "package",
         "dependencies": {
@@ -489,6 +577,10 @@
         "dependencies": {
           "Microsoft.AppCenter.Analytics": "1.11.0",
           "Microsoft.AppCenter.Crashes": "1.11.0",
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "12.0.1",
           "Rg.Plugins.Popup": "1.1.5.180",
           "Xamarin.Forms": "3.3.0.912540",
           "sqlite-net-pcl": "1.5.231"
@@ -541,6 +633,48 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
         }
       },
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.1.5.180": {
         "type": "package",
         "dependencies": {
@@ -732,6 +866,10 @@
         "dependencies": {
           "Microsoft.AppCenter.Analytics": "1.11.0",
           "Microsoft.AppCenter.Crashes": "1.11.0",
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "12.0.1",
           "Rg.Plugins.Popup": "1.1.5.180",
           "Xamarin.Forms": "3.3.0.912540",
           "sqlite-net-pcl": "1.5.231"
@@ -784,6 +922,48 @@
           "lib/Xamarin.iOS10/Microsoft.AppCenter.Crashes.iOS.Bindings.dll": {}
         }
       },
+      "Microsoft.Bcl/1.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/_._": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/_._": {}
+        }
+      },
+      "Microsoft.Bcl.Build/1.0.21": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.Net.Http/2.2.29": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.14"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll": {},
+          "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll": {}
+        }
+      },
+      "Newtonsoft.Json/12.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/1.1.5.180": {
         "type": "package",
         "dependencies": {
@@ -975,6 +1155,10 @@
         "dependencies": {
           "Microsoft.AppCenter.Analytics": "1.11.0",
           "Microsoft.AppCenter.Crashes": "1.11.0",
+          "Microsoft.Bcl": "1.1.10",
+          "Microsoft.Bcl.Build": "1.0.21",
+          "Microsoft.Net.Http": "2.2.29",
+          "Newtonsoft.Json": "12.0.1",
           "Rg.Plugins.Popup": "1.1.5.180",
           "Xamarin.Forms": "3.3.0.912540",
           "sqlite-net-pcl": "1.5.231"
@@ -1048,6 +1232,216 @@
         "runtimes/win10-x86/lib/uap10.0/Microsoft.AppCenter.Crashes.dll",
         "runtimes/win10-x86/lib/uap10.0/WatsonRegistrationUtility.winmd",
         "runtimes/win10-x86/native/WatsonRegistrationUtility.dll"
+      ]
+    },
+    "Microsoft.Bcl/1.1.10": {
+      "sha512": "BT7l/NmBorDS6ZEZhUyzaREaVg0jGrALySl1OM+ffV/Hjh9CSj3Qfa8nvdSoph1VDX9zDVXH/UBZMAJ5SISg3g==",
+      "type": "package",
+      "path": "microsoft.bcl/1.1.10",
+      "files": [
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/Xamarin.iOS10/_._",
+        "lib/monoandroid/_._",
+        "lib/monotouch/_._",
+        "lib/net40/System.IO.dll",
+        "lib/net40/System.IO.xml",
+        "lib/net40/System.Runtime.dll",
+        "lib/net40/System.Runtime.xml",
+        "lib/net40/System.Threading.Tasks.dll",
+        "lib/net40/System.Threading.Tasks.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/_._",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8/System.IO.dll",
+        "lib/portable-net40+sl4+win8/System.IO.xml",
+        "lib/portable-net40+sl4+win8/System.Runtime.dll",
+        "lib/portable-net40+sl4+win8/System.Runtime.xml",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl4+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl4+win8/ensureRedirect.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.IO.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Runtime.xml",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8+wp8+wpa81/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8+wp8+wpa81/ensureRedirect.xml",
+        "lib/portable-net40+win8/System.IO.dll",
+        "lib/portable-net40+win8/System.IO.xml",
+        "lib/portable-net40+win8/System.Runtime.dll",
+        "lib/portable-net40+win8/System.Runtime.xml",
+        "lib/portable-net40+win8/System.Threading.Tasks.dll",
+        "lib/portable-net40+win8/System.Threading.Tasks.xml",
+        "lib/portable-net40+win8/ensureRedirect.xml",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/portable-net45+win8+wpa81/_._",
+        "lib/portable-net451+win81+wpa81/_._",
+        "lib/portable-net451+win81/_._",
+        "lib/portable-win81+wp81+wpa81/_._",
+        "lib/sl4-windowsphone71/System.IO.dll",
+        "lib/sl4-windowsphone71/System.IO.xml",
+        "lib/sl4-windowsphone71/System.Runtime.dll",
+        "lib/sl4-windowsphone71/System.Runtime.xml",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.dll",
+        "lib/sl4-windowsphone71/System.Threading.Tasks.xml",
+        "lib/sl4-windowsphone71/ensureRedirect.xml",
+        "lib/sl4/System.IO.dll",
+        "lib/sl4/System.IO.xml",
+        "lib/sl4/System.Runtime.dll",
+        "lib/sl4/System.Runtime.xml",
+        "lib/sl4/System.Threading.Tasks.dll",
+        "lib/sl4/System.Threading.Tasks.xml",
+        "lib/sl5/System.IO.dll",
+        "lib/sl5/System.IO.xml",
+        "lib/sl5/System.Runtime.dll",
+        "lib/sl5/System.Runtime.xml",
+        "lib/sl5/System.Threading.Tasks.dll",
+        "lib/sl5/System.Threading.Tasks.xml",
+        "lib/win8/_._",
+        "lib/wp8/_._",
+        "lib/wpa81/_._",
+        "microsoft.bcl.1.1.10.nupkg.sha512",
+        "microsoft.bcl.nuspec"
+      ]
+    },
+    "Microsoft.Bcl.Build/1.0.21": {
+      "sha512": "btwCsKCOnOPhH71JeDt9zH8+eJqHoO0r2yr4xS2usCJM9FcWX/OXIafUOylU+SXVpLGMTcaVTl96BAEXOYmvIg==",
+      "type": "package",
+      "path": "microsoft.bcl.build/1.0.21",
+      "files": [
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "build/Microsoft.Bcl.Build.Tasks.dll",
+        "build/Microsoft.Bcl.Build.targets",
+        "microsoft.bcl.build.1.0.21.nupkg.sha512",
+        "microsoft.bcl.build.nuspec"
+      ]
+    },
+    "Microsoft.Net.Http/2.2.29": {
+      "sha512": "ls9yfwKS/5F4nBUq34U0HKAke+m4Jy0AFEQVvgHHdP7QccfFQFR1iq99qLms1lfd1OjfvfdBMA7o3bP2IMakwQ==",
+      "type": "package",
+      "path": "microsoft.net.http/2.2.29",
+      "files": [
+        ".signature.p7s",
+        "License-Stable.rtf",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.XML",
+        "lib/Xamarin.iOS10/System.Net.Http.Extensions.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.dll",
+        "lib/Xamarin.iOS10/System.Net.Http.Primitives.xml",
+        "lib/monoandroid/System.Net.Http.Extensions.XML",
+        "lib/monoandroid/System.Net.Http.Extensions.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.dll",
+        "lib/monoandroid/System.Net.Http.Primitives.xml",
+        "lib/monotouch/System.Net.Http.Extensions.XML",
+        "lib/monotouch/System.Net.Http.Extensions.dll",
+        "lib/monotouch/System.Net.Http.Primitives.dll",
+        "lib/monotouch/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.Extensions.XML",
+        "lib/net40/System.Net.Http.Extensions.dll",
+        "lib/net40/System.Net.Http.Primitives.dll",
+        "lib/net40/System.Net.Http.Primitives.xml",
+        "lib/net40/System.Net.Http.WebRequest.dll",
+        "lib/net40/System.Net.Http.WebRequest.xml",
+        "lib/net40/System.Net.Http.dll",
+        "lib/net40/System.Net.Http.xml",
+        "lib/net40/ensureRedirect.xml",
+        "lib/net45/System.Net.Http.Extensions.XML",
+        "lib/net45/System.Net.Http.Extensions.dll",
+        "lib/net45/System.Net.Http.Primitives.dll",
+        "lib/net45/System.Net.Http.Primitives.xml",
+        "lib/net45/ensureRedirect.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.XML",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.dll",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/System.Net.Http.xml",
+        "lib/portable-net40+sl4+win8+wp71+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8+wpa81/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8+wpa81/ensureRedirect.xml",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.XML",
+        "lib/portable-net45+win8/System.Net.Http.Extensions.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.dll",
+        "lib/portable-net45+win8/System.Net.Http.Primitives.xml",
+        "lib/portable-net45+win8/ensureRedirect.xml",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Extensions.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.XML",
+        "lib/sl4-windowsphone71/System.Net.Http.Primitives.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.dll",
+        "lib/sl4-windowsphone71/System.Net.Http.xml",
+        "lib/win8/System.Net.Http.Extensions.XML",
+        "lib/win8/System.Net.Http.Extensions.dll",
+        "lib/win8/System.Net.Http.Primitives.dll",
+        "lib/win8/System.Net.Http.Primitives.xml",
+        "lib/wpa81/System.Net.Http.Extensions.XML",
+        "lib/wpa81/System.Net.Http.Extensions.dll",
+        "lib/wpa81/System.Net.Http.Primitives.dll",
+        "lib/wpa81/System.Net.Http.Primitives.xml",
+        "microsoft.net.http.2.2.29.nupkg.sha512",
+        "microsoft.net.http.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/12.0.1": {
+      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
+      "type": "package",
+      "path": "newtonsoft.json/12.0.1",
+      "files": [
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.pdb",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.pdb",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.pdb",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.pdb",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.pdb",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.pdb",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.pdb",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.pdb",
+        "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
+        "newtonsoft.json.12.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec"
       ]
     },
     "Rg.Plugins.Popup/1.1.5.180": {
@@ -1338,20 +1732,20 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Hann\\.nuget\\packages\\": {}
+    "C:\\Users\\Owner\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
       "projectName": "FireProof.iOS",
-      "projectPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
-      "packagesPath": "C:\\Users\\Hann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof.iOS\\FireProof.iOS.csproj",
+      "packagesPath": "C:\\Users\\Owner\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
-        "C:\\Users\\Hann\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Owner\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1364,8 +1758,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\FireProof.csproj": {
-              "projectPath": "C:\\Users\\Hann\\Desktop\\FireProof\\FireProof\\FireProof\\FireProof\\FireProof.csproj"
+            "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\FireProof.csproj": {
+              "projectPath": "C:\\Users\\Owner\\Source\\Repos\\FireProof2\\FireProof\\FireProof\\FireProof\\FireProof.csproj"
             }
           }
         }
