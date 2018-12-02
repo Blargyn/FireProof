@@ -1,3 +1,4 @@
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\FireProof.iOS.exe
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\FireProof.iOS.pdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Microsoft.AppCenter.dll
@@ -6,6 +7,10 @@ C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimu
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Microsoft.AppCenter.Analytics.iOS.Bindings.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Microsoft.AppCenter.Crashes.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Microsoft.AppCenter.Crashes.iOS.Bindings.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Extensions.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.Primitives.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.pdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.IOS.pdb
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\Rg.Plugins.Popup.dll
@@ -32,7 +37,6 @@ C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimu
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
-C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
 C:\Users\Hann\Desktop\FireProof\FireProof\FireProof\FireProof.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
