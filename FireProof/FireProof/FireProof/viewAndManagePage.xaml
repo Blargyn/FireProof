@@ -3,16 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireProof.viewAndManagePage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Inventory Page"
-                VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="150" />
+                <RowDefinition Height="150" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
             
             <Label Text="Rooms"
+                   FontSize="40"
                    VerticalOptions="StartAndExpand" 
-                   HorizontalOptions="CenterAndExpand" />
+                   HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"/>
+
+            <Button Text="Add Room"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="StartAndExpand"
+                    Clicked="Handle_AddRPopup"
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+
+            <Button Text="Fetch Rooms"
+                    VerticalOptions="EndAndExpand"
+                    HorizontalOptions="EndAndExpand"
+                    Clicked="Handle_GetRooms"
+                    Grid.Row="1"
+                    Grid.Column="1"/>
 
             <ListView
+                Grid.Row="2"
+                Grid.ColumnSpan="2"
                 x:Name="RoomListView">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -21,26 +47,29 @@
 
                             </ViewCell.ContextActions>
                             <ViewCell.View>
-                                <StackLayout
-                                    Orientation="Horizontal">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="100" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="3*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
                                     <Label
-                                        Text="{Binding roomName}" />
-                                </StackLayout>
+                                        Text="{Binding roomName}"
+                                        Grid.Row="0"
+                                        Grid.Column="0"/>
+                                    <Button
+                                        Text="View Items"
+                                        Clicked="Handle_ItemPage"
+                                        Grid.Row="0"
+                                        Grid.Column="1" />
+                                </Grid>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
-            <Button Text="Add Room"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="StartAndExpand"
-                    Clicked="Handle_AddPopup" />
-            
-            <Button Text="Fetch Rooms"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="EndAndExpand"
-                    Clicked="Handle_GetRooms"/>
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

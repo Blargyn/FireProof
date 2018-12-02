@@ -7,6 +7,42 @@
             <Label Text="{Binding roomName}"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+
+            <Button
+                Text="Add Item"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="Handle_AddIPopup" />
+
+            <Button
+                Text="Fetch Items"
+                VerticalOptions="StartAndExpand"
+                HorizontalOptions="CenterAndExpand"
+                Clicked="Handle_GetItems"/>
+
+            <ListView
+                x:Name="ItemListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                
+                            </ViewCell.ContextActions>
+
+                            <ViewCell.View>
+                                <StackLayout
+                                    Orientation="Horizontal">
+                                    <Label
+                                        Text="{Binding itemName}" />
+                                    
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
