@@ -71,8 +71,11 @@ namespace FireProof
         {
             var itemInfo = (Button)sender;
             var item = (ItemModel)itemInfo.CommandParameter;
+            string roomTitle = item.roomName;
 
             await App.Database.DeleteItem(item);
+
+            Handle_GetItems(roomTitle);
         }
 	}
 }

@@ -36,7 +36,7 @@ namespace FireProof
 
         public Task<List<ItemModel>> GetAllItems()
         {
-            return database.QueryAsync<ItemModel>("SELECT * FROM [ItemModel]");
+            return database.QueryAsync<ItemModel>("SELECT * FROM [ItemModel]"); //never used, was for initial testing
         }
 
         public Task<List<RoomModel>> GetAllRooms()
@@ -46,7 +46,7 @@ namespace FireProof
 
         public Task<List<ItemModel>> GetRoomItems(string roomTitle)
         {
-            return database.QueryAsync<ItemModel>("SELECT DISTINCT * FROM [ItemModel] WHERE roomName ='"+roomTitle+"'"); //ghetto way to ignore duplicates
+            return database.QueryAsync<ItemModel>("SELECT DISTINCT * FROM [ItemModel] WHERE roomName ='"+roomTitle+"'");
         }
 
         public Task<List<ItemModel>> DeleteItem(ItemModel item)

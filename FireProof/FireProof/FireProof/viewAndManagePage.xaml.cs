@@ -68,6 +68,8 @@ namespace FireProof
             var room = (RoomModel)roomInfo.CommandParameter;
 
             await App.Database.DeleteRoom(room);
+
+            Handle_GetRooms();
         }
 
     }
