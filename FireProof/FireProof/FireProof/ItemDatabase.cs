@@ -48,5 +48,27 @@ namespace FireProof
         {
             return database.QueryAsync<ItemModel>("SELECT DISTINCT * FROM [ItemModel] WHERE roomName ='"+roomTitle+"'"); //ghetto way to ignore duplicates
         }
+
+        public Task<List<ItemModel>> DeleteItem(ItemModel item)
+        {
+            var r = item.roomName;
+            var n = item.itemName;
+            var v = item.value;
+            var q = item.quantity;
+            return database.QueryAsync<ItemModel>("DELETE FROM [ItemModel] WHERE roomName ='" + r + "' AND itemName = '"+n+"' AND value = '"+v+"' AND quantity = '" + q + "'");
+        }
+
+        public Task<List<RoomModel>> DeleteRoom(RoomModel room)
+        {
+            string roomName = room.roomName;
+            DeleteAllItems(roomName);
+
+            return database.QueryAsync<RoomModel>("DELETE FROM [RoomModel] WHERE roomName='" + roomName + "'");
+        }
+
+        public Task<List<ItemModel>> DeleteAllItems(string room)
+        {
+            return database.QueryAsync<ItemModel>("DELETE FROM [ItemModel] WHERE roomName ='" + room+"'");
+        }
     }
 }

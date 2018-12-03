@@ -66,5 +66,13 @@ namespace FireProof
 
             ItemListView.ItemsSource = itemList;
         }
+
+        async void Handle_DeleteItem(object sender, EventArgs e)
+        {
+            var itemInfo = (Button)sender;
+            var item = (ItemModel)itemInfo.CommandParameter;
+
+            await App.Database.DeleteItem(item);
+        }
 	}
 }

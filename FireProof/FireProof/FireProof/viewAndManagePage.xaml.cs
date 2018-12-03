@@ -62,5 +62,13 @@ namespace FireProof
             await Navigation.PushAsync(new itemsPage(room));
         }
 
+        async void Handle_DeleteRoom(object sender, EventArgs e)
+        {
+            var roomInfo = (Button)sender;
+            var room = (RoomModel)roomInfo.CommandParameter;
+
+            await App.Database.DeleteRoom(room);
+        }
+
     }
 }

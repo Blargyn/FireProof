@@ -14,7 +14,7 @@
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
             
-            <Label Text="{Binding Path=roomName}"
+            <Label Text="Room Inventory"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                    Grid.Row="0"
@@ -36,7 +36,8 @@
                 x:Name="ItemListView"
                 Grid.Row="2"
                 Grid.Column="0"
-                Grid.ColumnSpan="2">
+                Grid.ColumnSpan="2"
+                HasUnevenRows="True">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -47,9 +48,10 @@
                             <ViewCell.View>
                                 <Grid>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="150" />
+                                        <RowDefinition Height="75" />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="*" />
@@ -60,7 +62,7 @@
                                         Grid.Column="0"
                                         HorizontalOptions="StartAndExpand"/>
                                     <Label 
-                                        Text="{Binding value}"
+                                        Text="{Binding Path=value, StringFormat='${0}'}"
                                         Grid.Row="0"
                                         Grid.Column="1"
                                         HorizontalOptions="CenterAndExpand"/>
@@ -69,6 +71,14 @@
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         HorizontalOptions="EndAndExpand"/>
+                                    <Button
+                                        Text="Delete"
+                                        Grid.Row="0"
+                                        Grid.Column="3"
+                                        HorizontalOptions="EndAndExpand"
+                                        Clicked="Handle_DeleteItem"
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="Red"/>
 
                                 </Grid>
                             </ViewCell.View>
