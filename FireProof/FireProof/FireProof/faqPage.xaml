@@ -4,13 +4,14 @@
              x:Class="FireProof.faqPage"
              BackgroundColor="Tan">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout>
-            <Label Text="Frequently Asked Questions"
+                <Label Text="Frequently Asked Questions"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                    FontSize="35"
                    TextColor="Black"/>
-            <Label
+                <Label
                 Text="What is fireproof?"
                 TextColor="DarkRed"
                 Font="Bold, 20" />
@@ -38,10 +39,11 @@
                 Text="Why do multiple items get added at once sometimes?"
                 TextColor="DarkRed"
                 Font="Bold, 20" />
-            <Label
+                <Label
                 Text="Your speed-tapping skills far exceed that of a normal human being, causing it to register multiple times. Good job."
                 TextColor="IndianRed"
                 FontSize="18" />
-        </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
