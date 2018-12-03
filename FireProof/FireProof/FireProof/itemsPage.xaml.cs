@@ -18,14 +18,33 @@ namespace FireProof
 		{
 			InitializeComponent ();
 
-            MessagingCenter.Subscribe<ItemModel>(this, "PopUpItem", (item) => Handle_AddItem(item));
-		}
+            //MessagingCenter.Subscribe<ItemModel>(this, "PopUpItem", (item) => Handle_AddItem(item, roomTitle));
+            //This should never be called
+        }
 
-        async void Handle_AddItem(ItemModel item)
+        public itemsPage(RoomModel room)
         {
+            InitializeComponent();
+
+            bool initialized = false;
+
+            if (initialized == false)
+            {
+                string roomName = room.roomName;
+                Handle_GetItems(roomName);
+
+                MessagingCenter.Subscribe<ItemModel>(this, "PopUpItem", (item) => Handle_AddItem(item, roomName));
+            }
+
+            initialized = true;
+        }
+
+        async void Handle_AddItem(ItemModel item, string roomTitle)
+        {
+            item.roomName = roomTitle;
             await App.Database.SaveItemAsync(item);
 
-            var allItems = await App.Database.GetAllItems();
+            var allItems = await App.Database.GetRoomItems(roomTitle);
 
             var itemList = new ObservableCollection<ItemModel>();
             allItems.ForEach(x => itemList.Add(x));
@@ -38,9 +57,9 @@ namespace FireProof
             PopupNavigation.Instance.PushAsync(new itemPopup());
         }
 
-        async void Handle_GetItems(object sender, EventArgs e)
+        async void Handle_GetItems(string roomTitle)
         {
-            var allItems = await App.Database.GetAllItems();
+            var allItems = await App.Database.GetRoomItems(roomTitle);
 
             var itemList = new ObservableCollection<ItemModel>();
             allItems.ForEach(x => itemList.Add(x));

@@ -31,14 +31,7 @@ namespace FireProof
 
         public Task<int> SaveRoomAsync(RoomModel room)
         {
-            //if (room.roomName != "NULL")
-            //{
-            //    return database.UpdateAsync(room);
-            //}
-            //else
-            //{
-                return database.InsertAsync(room);
-            //}
+            return database.InsertAsync(room);
         }
 
         public Task<List<ItemModel>> GetAllItems()
@@ -48,7 +41,12 @@ namespace FireProof
 
         public Task<List<RoomModel>> GetAllRooms()
         {
-            return database.QueryAsync<RoomModel>("SELECT * from [RoomModel]");
+            return database.QueryAsync<RoomModel>("SELECT * FROM [RoomModel]");
+        }
+
+        public Task<List<ItemModel>> GetRoomItems(string roomTitle)
+        {
+            return database.QueryAsync<ItemModel>("SELECT DISTINCT * FROM [ItemModel] WHERE roomName ='"+roomTitle+"'"); //ghetto way to ignore duplicates
         }
     }
 }

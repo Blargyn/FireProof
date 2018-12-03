@@ -15,7 +15,7 @@ namespace FireProof
 		public itemPopup ()
 		{
 			InitializeComponent ();
-		}
+        }
 
         private void Handle_AddItemPopup(object sender, EventArgs e)
         {

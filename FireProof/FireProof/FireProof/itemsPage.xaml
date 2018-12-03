@@ -3,25 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireProof.itemsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="{Binding roomName}"
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <Label Text="{Binding Path=roomName}"
                 VerticalOptions="StartAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+                HorizontalOptions="CenterAndExpand"
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   Grid.ColumnSpan="2"
+                   FontSize="40"/>
 
             <Button
                 Text="Add Item"
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="CenterAndExpand"
-                Clicked="Handle_AddIPopup" />
+                Clicked="Handle_AddIPopup"
+                Grid.Row="1"
+                Grid.Column="0"/>
 
-            <Button
-                Text="Fetch Items"
-                VerticalOptions="StartAndExpand"
-                HorizontalOptions="CenterAndExpand"
-                Clicked="Handle_GetItems"/>
+            
 
             <ListView
-                x:Name="ItemListView">
+                x:Name="ItemListView"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="2">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -30,12 +45,32 @@
                             </ViewCell.ContextActions>
 
                             <ViewCell.View>
-                                <StackLayout
-                                    Orientation="Horizontal">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="150" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
                                     <Label
-                                        Text="{Binding itemName}" />
-                                    
-                                </StackLayout>
+                                        Text="{Binding itemName}"
+                                        Grid.Row="0"
+                                        Grid.Column="0"
+                                        HorizontalOptions="StartAndExpand"/>
+                                    <Label 
+                                        Text="{Binding value}"
+                                        Grid.Row="0"
+                                        Grid.Column="1"
+                                        HorizontalOptions="CenterAndExpand"/>
+                                    <Label
+                                        Text="{Binding quantity}"
+                                        Grid.Row="0"
+                                        Grid.Column="2"
+                                        HorizontalOptions="EndAndExpand"/>
+
+                                </Grid>
                             </ViewCell.View>
                         </ViewCell>
                     </DataTemplate>
@@ -43,6 +78,6 @@
             </ListView>
             
             
-        </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

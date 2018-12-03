@@ -17,6 +17,8 @@ namespace FireProof
 		{
 			InitializeComponent ();
 
+            Handle_GetRooms();
+
             MessagingCenter.Subscribe<string>(this, "PopUpRoom", (room) => Handle_AddRoom(room));
         }
 
@@ -42,7 +44,7 @@ namespace FireProof
             PopupNavigation.Instance.PushAsync(new roomPopup());
         }
 
-        async void Handle_GetRooms(object sender, EventArgs e)
+        async void Handle_GetRooms()
         {
             var allRooms = await App.Database.GetAllRooms();
 
@@ -54,7 +56,10 @@ namespace FireProof
 
         async void Handle_ItemPage(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new itemsPage());
+            var roomInfo = (Button)sender;
+            var room = (RoomModel)roomInfo.CommandParameter;
+
+            await Navigation.PushAsync(new itemsPage(room));
         }
 
     }

@@ -5,8 +5,8 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="150" />
-                <RowDefinition Height="150" />
+                <RowDefinition Height="60" />
+                <RowDefinition Height="60" />
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
@@ -29,12 +29,6 @@
                     Grid.Row="1"
                     Grid.Column="0"/>
 
-            <Button Text="Fetch Rooms"
-                    VerticalOptions="EndAndExpand"
-                    HorizontalOptions="EndAndExpand"
-                    Clicked="Handle_GetRooms"
-                    Grid.Row="1"
-                    Grid.Column="1"/>
 
             <ListView
                 Grid.Row="2"
@@ -49,10 +43,10 @@
                             <ViewCell.View>
                                 <Grid>
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="100" />
+                                        <RowDefinition Height="150" />
                                     </Grid.RowDefinitions>
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="3*" />
+                                        <ColumnDefinition Width="2*" />
                                         <ColumnDefinition Width="*" />
                                     </Grid.ColumnDefinitions>
                                     <Label
@@ -63,7 +57,8 @@
                                         Text="View Items"
                                         Clicked="Handle_ItemPage"
                                         Grid.Row="0"
-                                        Grid.Column="1" />
+                                        Grid.Column="1"
+                                        CommandParameter="{Binding .}"/>
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>
