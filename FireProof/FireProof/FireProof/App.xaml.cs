@@ -34,7 +34,10 @@ namespace FireProof
 
         protected override void OnStart()
         {
-
+            AppCenter.Start("android=a1751ded-27d8-4ff1-8ba1-c3078989189d;" +
+                  "uwp={Your UWP App secret here};" +
+                  "ios={Your iOS App secret here}",
+                  typeof(Analytics), typeof(Crashes));
         }
 
         protected override void OnSleep()

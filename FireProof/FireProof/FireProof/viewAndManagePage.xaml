@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FireProof.viewAndManagePage">
+             x:Class="FireProof.viewAndManagePage"
+             BackgroundColor="Tan">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -16,6 +17,7 @@
             
             <Label Text="Rooms"
                    FontSize="40"
+                   TextColor="Black"
                    VerticalOptions="StartAndExpand" 
                    HorizontalOptions="CenterAndExpand"
                    Grid.Row="0"
@@ -23,11 +25,14 @@
                    Grid.ColumnSpan="2"/>
 
             <Button Text="Add Room"
+                    TextColor="Black"
+                    BackgroundColor="IndianRed"
                     VerticalOptions="EndAndExpand"
-                    HorizontalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
                     Clicked="Handle_AddRPopup"
                     Grid.Row="1"
-                    Grid.Column="0"/>
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"/>
 
 
             <ListView
@@ -53,22 +58,27 @@
                                     </Grid.ColumnDefinitions>
                                     <Label
                                         Text="{Binding roomName}"
+                                        VerticalOptions="CenterAndExpand"
+                                        TextColor="Black"
                                         Grid.Row="0"
                                         Grid.Column="0"/>
                                     <Button
                                         Text="View Items"
+                                        TextColor="Black"
                                         Clicked="Handle_ItemPage"
                                         Grid.Row="0"
                                         Grid.Column="1"
-                                        CommandParameter="{Binding .}"/>
+                                        CommandParameter="{Binding .}"
+                                        BackgroundColor="IndianRed"/>
                                     <Button
                                         Text="Delete"
+                                        TextColor="Black"
                                         Clicked="Handle_DeleteRoom"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         FontSize="16"
                                         CommandParameter="{Binding .}"
-                                        BackgroundColor="Red"/>
+                                        BackgroundColor="DarkRed"/>
                                 </Grid>
                             </ViewCell.View>
                         </ViewCell>

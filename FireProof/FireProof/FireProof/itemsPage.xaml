@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FireProof.itemsPage">
+             x:Class="FireProof.itemsPage"
+             BackgroundColor="Tan">
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
@@ -15,6 +16,7 @@
             </Grid.ColumnDefinitions>
             
             <Label Text="Room Inventory"
+                   TextColor="Black"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand"
                    Grid.Row="0"
@@ -24,11 +26,14 @@
 
             <Button
                 Text="Add Item"
+                TextColor="Black"
+                BackgroundColor="IndianRed"
                 VerticalOptions="StartAndExpand"
                 HorizontalOptions="CenterAndExpand"
                 Clicked="Handle_AddIPopup"
                 Grid.Row="1"
-                Grid.Column="0"/>
+                Grid.Column="0"
+                Grid.ColumnSpan="2"/>
 
             
 
@@ -58,27 +63,35 @@
                                     </Grid.ColumnDefinitions>
                                     <Label
                                         Text="{Binding itemName}"
+                                        TextColor="Black"
+                                        VerticalOptions="CenterAndExpand"
                                         Grid.Row="0"
                                         Grid.Column="0"
                                         HorizontalOptions="StartAndExpand"/>
                                     <Label 
                                         Text="{Binding Path=value, StringFormat='${0}'}"
+                                        TextColor="Black"
+                                        VerticalOptions="CenterAndExpand"
                                         Grid.Row="0"
                                         Grid.Column="1"
                                         HorizontalOptions="CenterAndExpand"/>
                                     <Label
                                         Text="{Binding quantity}"
+                                        TextColor="Black"
+                                        VerticalOptions="CenterAndExpand"
                                         Grid.Row="0"
                                         Grid.Column="2"
                                         HorizontalOptions="EndAndExpand"/>
                                     <Button
                                         Text="Delete"
+                                        TextColor="Black"
                                         Grid.Row="0"
                                         Grid.Column="3"
+                                        VerticalOptions="CenterAndExpand"
                                         HorizontalOptions="EndAndExpand"
                                         Clicked="Handle_DeleteItem"
                                         CommandParameter="{Binding .}"
-                                        BackgroundColor="Red"/>
+                                        BackgroundColor="DarkRed"/>
 
                                 </Grid>
                             </ViewCell.View>

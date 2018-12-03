@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FireProof.itemPopup"
                  xmlns:animations="clr-namespace:Rg.Plugins.Popup.Animations;assembly=Rg.Plugins.Popup"
-                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup">
+                 xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                 BackgroundColor="Tan">
 
     <pages:PopupPage.Animation>
         <animations:ScaleAnimation DurationIn="400"
@@ -19,12 +20,13 @@
 
     <StackLayout Margin="12"
                  Padding="24"
-                 BackgroundColor="White"
+                 BackgroundColor="Tan"
                  HorizontalOptions="Center"
                  VerticalOptions="Center" >
 
         <StackLayout>
             <Label Text="Add Item"
+                   TextColor="Black"
                FontSize="40" />
             <Entry
                 x:Name="nameEntry"
@@ -39,10 +41,10 @@
                 FontSize="25"
                 Placeholder="1" />
             <Button
-                BackgroundColor="DodgerBlue"
+                BackgroundColor="IndianRed"
                 FontSize="30"
                 Text="Add"
-                TextColor="White"
+                TextColor="Black"
                 Clicked="Handle_AddItemPopup" />
         </StackLayout>
     </StackLayout>

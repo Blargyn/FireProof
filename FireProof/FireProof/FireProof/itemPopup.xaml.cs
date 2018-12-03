@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -19,6 +22,8 @@ namespace FireProof
 
         private void Handle_AddItemPopup(object sender, EventArgs e)
         {
+            Analytics.TrackEvent("Item Added");
+
             var item = new ItemModel
             {
                 roomName = "Stuff", //make this reference room object

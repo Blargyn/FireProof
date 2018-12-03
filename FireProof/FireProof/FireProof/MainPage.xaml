@@ -2,51 +2,64 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:FireProof"
-             x:Class="FireProof.MainPage">
+             x:Class="FireProof.MainPage"
+             BackgroundColor="Tan">
 
-    <StackLayout>
+
         <!-- Place new controls here -->
-        <Grid>
+        <Grid Padding="5,5,5,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="2*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="100"/>
+                <RowDefinition Height="75"/>
                 <RowDefinition Height="2*"/>
-                <RowDefinition Height="3*"/>
-                <RowDefinition Height="3*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
                 <RowDefinition Height="2*"/>
             </Grid.RowDefinitions>
+            
             <Label  Text="Fireproof" 
                     HorizontalOptions="Center"
                     VerticalOptions="StartAndExpand"
                     Grid.Row="0"
                     Grid.Column="1"
-                    Grid.ColumnSpan="2"/>
+                    Grid.ColumnSpan="2"
+                    Font="Bold, 35"
+                    TextColor="Black"/>
+            
             <Button Text="View and Manage"
                     Grid.Row="2"
                     Grid.Column="1"
                     Grid.ColumnSpan="2"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand"
-                    Clicked="viewClicked"/>
+                    Clicked="viewClicked"
+                    BackgroundColor="IndianRed"
+                    TextColor="Black"/>
+            
             <Button Text="Fire Info"
                     Grid.Row="3"
                     Grid.Column="1"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand"
-                    Clicked="infoClicked"/>
+                    Clicked="infoClicked"
+                    BackgroundColor="IndianRed"
+                    TextColor="Black"/>
+            
             <Button Text="FAQ"
                     Grid.Row="3"
                     Grid.Column="2"
                     HorizontalOptions="CenterAndExpand"
                     VerticalOptions="CenterAndExpand"
-                    Clicked="faqClicked"/>
+                    Clicked="faqClicked"
+                    BackgroundColor="IndianRed"
+                    TextColor="Black"/>
 
         </Grid>
-    </StackLayout>
+
 
 </ContentPage>
