@@ -1,12 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FireProof.faqPage">
+             x:Class="FireProof.faqPage"
+             BackgroundColor="Black">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Frequently Asked Questions"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand"
+                   FontSize="35"
+                   TextColor="Orange"/>
+            <Label
+                Text="What is fireproof?"
+                TextColor="OrangeRed"
+                Font="Bold, 20" />
+            <Label
+                Text="Fireproof is a mobile inventory application intended for homeowners. The app keeps track of what you own on a local database in case everything catches fire and is lost."
+                TextColor="Red"
+                FontSize="18" />
+            <Label
+                Text="What does Fire Info do?"
+                TextColor="OrangeRed"
+                Font="Bold, 20" />
+            <Label
+                Text="Fire Info uses a super advanced algorith to determine whether or not you're in immediate fire danger...based on the weather."
+                TextColor="Red"
+                FontSize="18" />
+            <Label
+                Text="Why do my elements not delete?"
+                TextColor="OrangeRed"
+                Font="Bold, 20" />
+            <Label
+                Text="Your inventory is durable in Fireproof, and you must navigate back a page to refresh. This is to ensure safety and is not a bug at all help."
+                TextColor="Red"
+                FontSize="18" />
+            <Label
+                Text="Why do multiple items get added at once sometimes?"
+                TextColor="OrangeRed"
+                Font="Bold, 20" />
+            <Label
+                Text="Your speed-tapping skills far exceed that of a normal human being, causing it to register multiple times. Good job."
+                TextColor="Red"
+                FontSize="18" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
