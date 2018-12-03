@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,6 +24,26 @@ namespace FireProof
             {
                 WeatherData weatherData = await _restService.GetWeatherData(GenerateRequestUri(Constants.OpenWeatherMapEndpoint));
                 BindingContext = weatherData;
+                if (weatherData.Main.Temperature >= 90 || weatherData.Wind.Speed >= 3 || weatherData.Main.Humidity < 30)
+                {
+                    level.Text = "1";
+                }
+                else
+                {
+                    level.Text = "0";
+                }
+
+                if ((weatherData.Main.Temperature >= 90 && weatherData.Wind.Speed >= 3)
+                || (weatherData.Wind.Speed >= 3 && weatherData.Main.Humidity < 30)
+                || (weatherData.Main.Temperature >= 90 && weatherData.Main.Humidity < 30))
+                {
+                    level.Text = "2";
+                }
+
+                if(weatherData.Main.Temperature >= 90 && weatherData.Wind.Speed >= 3 && weatherData.Main.Humidity < 30)
+                {
+                    level.Text = "3";
+                }
             }
         }
 
