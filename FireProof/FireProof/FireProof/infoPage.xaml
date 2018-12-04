@@ -85,6 +85,11 @@
                 <Label Text="{Binding Title}" 
                        Style="{StaticResource labelResultStyle}" />
 
+                <Image x:Name="icon"
+                       Source=""
+                       HorizontalOptions="Start" VerticalOptions="Start"/>
+
+
                 <Label Text="Temperature" 
                        Style="{StaticResource labelStyle}" />
                 <Label Text="{Binding Main.Temperature, StringFormat='{0:N} f'}" 
@@ -99,7 +104,6 @@
                        Style="{StaticResource labelStyle}" />
                 <Label Text="{Binding Main.Humidity, StringFormat='{0:N} %'}" 
                        Style="{StaticResource labelResultStyle}" />
-
                 <Label Text="Visibility" 
                        Style="{StaticResource labelStyle}" />
                 <Label Text="{Binding Weather[0].Visibility}" 
