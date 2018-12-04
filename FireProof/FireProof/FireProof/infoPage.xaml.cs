@@ -12,6 +12,7 @@ namespace FireProof
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class infoPage : ContentPage
 	{
+        
         RestService _restService;
         public infoPage ()
 		{
@@ -27,10 +28,12 @@ namespace FireProof
                 if (weatherData.Main.Temperature >= 90 || weatherData.Wind.Speed >= 3 || weatherData.Main.Humidity < 30)
                 {
                     level.Text = "1";
+                    level.TextColor = Color.Yellow;
                 }
                 else
                 {
                     level.Text = "0";
+                    level.TextColor = Color.White;
                 }
 
                 if ((weatherData.Main.Temperature >= 90 && weatherData.Wind.Speed >= 3)
@@ -38,12 +41,17 @@ namespace FireProof
                 || (weatherData.Main.Temperature >= 90 && weatherData.Main.Humidity < 30))
                 {
                     level.Text = "2";
+                    level.TextColor = Color.Orange;
                 }
 
                 if(weatherData.Main.Temperature >= 90 && weatherData.Wind.Speed >= 3 && weatherData.Main.Humidity < 30)
                 {
                     level.Text = "3";
+                    level.TextColor = Color.Red;
                 }
+               icon.Source = "http://openweathermap.org/img/w/" + weatherData.Weather[0].Icon + ".png";
+                icon.WidthRequest = 64;
+                icon.HeightRequest = 64;
             }
         }
 
